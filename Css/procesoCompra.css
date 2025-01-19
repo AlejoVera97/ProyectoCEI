@@ -1,0 +1,99 @@
+.compra {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Estilos Responsivos --- */
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    .compra {
+        padding: 15px;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    input, select, button {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px 20px;
+    }
+}
+
+/* Para dispositivos muy pequeños (como móviles en modo retrato) */
+@media (max-width: 480px) {
+    .compra {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    input, select, button {
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px 18px;
+    }
+}

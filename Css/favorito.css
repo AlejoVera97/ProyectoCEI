@@ -1,0 +1,153 @@
+/* Estilo general para el contenedor principal de favoritos */
+.Main-Favoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; 
+}
+
+/* Estilo para la lista de productos favoritos */
+.Favoritos-Listado {
+    max-width: 1200px; 
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de los productos favoritos */
+#contenedor-favorito {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; 
+    margin-top: 20px;
+}
+
+/* Estilo general del producto favorito */
+.Producto-Favorito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 100%; /* Ocupa el 100% del contenedor */
+}
+
+.Producto-Favorito:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la imagen del producto */
+.Producto-Imagen {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+/* Información del producto */
+.Producto-Info {
+    flex: 1;
+}
+
+/* Nombre del producto */
+.Producto-Nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción del producto */
+.Producto-Descripcion {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.Producto-Precio {
+    font-size: 1.1rem;
+    color: #27ae60; /* Un color verde */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Estilo del botón de quitar */
+.Producto-Boton-Quitar {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Producto-Boton-Quitar:hover {
+    background-color: #c0392b;
+}
+
+/* --- Estilos Responsivos --- */
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    .Producto-Favorito {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Producto-Imagen {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .Producto-Nombre {
+        font-size: 1rem;
+    }
+
+    .Producto-Descripcion {
+        font-size: 0.8rem;
+    }
+
+    .Producto-Precio {
+        font-size: 1rem;
+    }
+
+    .Producto-Boton-Quitar {
+        width: 100%;
+    }
+}
+
+/* Para dispositivos muy pequeños (como móviles en modo retrato) */
+@media (max-width: 480px) {
+    .Producto-Imagen {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Producto-Nombre {
+        font-size: 1rem;
+    }
+
+    .Producto-Descripcion {
+        font-size: 0.8rem;
+    }
+
+    .Producto-Precio {
+        font-size: 1rem;
+    }
+
+    .Producto-Boton-Quitar {
+        padding: 10px 20px;
+    }
+}
