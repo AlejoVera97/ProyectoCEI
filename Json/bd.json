@@ -7,8 +7,8 @@
             "precio": 350.00,
             "imagenes": [
                 "/img/muebles/juego-jardin/jardin-1.jpg",
-                "/img/muebles/juego-jardin/jardin-2.jpg.jpg",
-                "/img/muebles/juego-jardin/jardin-3.jpg.jpg"
+                "/img/muebles/juego-jardin/jardin-2.jpg",
+                "/img/muebles/juego-jardin/jardin-3.jpg"
             ],
             "stock": 10
         },
