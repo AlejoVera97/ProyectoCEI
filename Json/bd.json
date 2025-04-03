@@ -6,9 +6,9 @@
             "descripcion": "Juego completo de jardín con sillas y mesa, ideal para disfrutar al aire libre en tu patio o terraza.",
             "precio": 350.00,
             "imagenes": [
-                "../Img/Muebles/JuegoJardin/Jardin1.jpg",
-                "../Img/Muebles/JuegoJardin/Jardin2.jpg",
-                "../Img/Muebles/JuegoJardin/Jardin3.jpg"
+                "/img/muebles/juego-jardin/jardin-1.jpg",
+                "/img/muebles/juego-jardin/jardin-2.jpg.jpg",
+                "/img/muebles/juego-jardin/jardin-3.jpg.jpg"
             ],
             "stock": 10
         },
@@ -18,9 +18,9 @@
             "descripcion": "Cerco resistente de postes de madera, ideal para cercar jardines o propiedades, brindando privacidad y seguridad.",
             "precio": 320.00,
             "imagenes": [
-                "../Img/Cercos/Postes/Cerco1.jpg",
-                "../Img/Cercos/Postes/Cerco2.jpg",
-                "../Img/Cercos/Postes/Cerco3.jpg"
+                "/img/cercos/postes/cerco-poste-1.jpg",
+                "/img/cercos/postes/cerco-poste-2.jpg",
+                "/img/cercos/postes/cerco-poste-3.jpg"
             ],
             "stock": 10
         },
@@ -30,8 +30,9 @@
             "descripcion": "Cerco de maderas de alta calidad, perfecto para crear un ambiente natural y seguro en tu jardín o terreno.",
             "precio": 400.00,
             "imagenes": [
-                "../Img/Cercos/Maderas/CercoMadera1.jpg",
-                "../Img/Cercos/Maderas/CercoMadera2.jpg"
+                "/img/cercos/maderas/cerco-madera-1.jpg",
+                "/img/cercos/maderas/cerco-madera-2.jpg",
+                "/img/cercos/maderas/cerco-madera-3.jpg"
             ],
             "stock": 10
         },
@@ -41,8 +42,8 @@
             "descripcion": "Mesa robusta y resistente para exteriores, ideal para disfrutar de una comida o reunión al aire libre.",
             "precio": 400.00,
             "imagenes": [
-                "../Img/Mesas/mesa1.jpg",
-                "../Img/Mesas/mesa2.jpg"
+                "/img/mesas/mesa-1.jpg",
+               "/img/mesas/mesa-2.jpg"
             ],
             "stock": 10
         },
@@ -52,8 +53,8 @@
             "descripcion": "Reposera de madera perfecta para descansar y disfrutar del sol en tu jardín o terraza.",
             "precio": 400.00,
             "imagenes": [
-                "../Img/Muebles/Reposera/Reposera1.jpg",
-                "../Img/Muebles/Reposera/Reposera2.jpg"
+                "/img/muebles/reposera/reposera-1.jpg",
+                "/img/muebles/reposera/reposera-2.jpg"
             ],
             "stock": 10
         },
@@ -63,8 +64,10 @@
             "descripcion": "Sillón exterior cómodo y resistente, diseñado para proporcionar confort en tu espacio al aire libre.",
             "precio": 400.00,
             "imagenes": [
-                "../Img/Muebles/3Cuerpos/Sillon3.jpg",
-                "../Img/Muebles/3Cuerpos/Sillon2.jpg"
+                "/img/muebles/tres-cuerpos/sillon-2.jpg",
+                "/img/muebles/tres-cuerpos/sillon-3.jpg",
+                "/img/muebles/tres-cuerpos/sillon-4.jpg",
+                "/img/muebles/tres-cuerpos/sillon-5.jpg"
             ] ,
             "stock": 10
         },
@@ -74,8 +77,8 @@
             "descripcion": "Portón de madera robusto y elegante, ideal para entradas de jardín o propiedad, ofreciendo seguridad y estilo.",
             "precio": 400.00,
             "imagenes":[
-                "../Img/Porteras/Portera1.jpg",
-                "../Img/Porteras/Portera2.jpg"
+                "/img/porteras/portera-1.jpg",
+                "/img/porteras/portera-2.jpg"
             ],
             "stock": 10
         },
@@ -85,8 +88,8 @@
             "descripcion": "Pérgola de madera resistente para crear sombra en tu jardín, perfecta para áreas de descanso o comedor exterior.",
             "precio": 400.00,
             "imagenes":[
-                "../Img/Pergolas/Pergola1.jpg",
-                "../Img/Pergolas/Pergola2.jpg"
+                "/img/pergolas/pergola-1.jpg",
+                "/img/pergolas/pergola-2.jpg"
             ],
             "stock": 10
         }

@@ -7,10 +7,10 @@
     <title>Vera Maderas</title>
 
     <!--Vinculo JS-->
-    <script defer src="../js/Usuario.js"></script>
+    <script defer src="./js/usuario.js"></script>
     <!--Vinculo CSS-->
-    <link rel="stylesheet" href="../Css/main.css">
-    <link rel="stylesheet" href="../Css/usuario.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/usuario.css">
     <!-- Fuentes iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <!--Funtes redes sociales -->
@@ -32,7 +32,7 @@
     <header class="Header">
         <div class="Header-Logo">
             <a href="/index.html">
-                <img class="Header-LogoImagen" src="../Img/Logo/LogoVeraMaderas.jpg" alt="VeraMaderas">
+                <img class="Header-LogoImagen" src="./img/logo/logo-vera-maderas.jpg" alt="VeraMaderas">
             </a>
         </div>
         <form class="Header-Busqueda" action="search.html" method="get">
@@ -43,25 +43,25 @@
         <nav class="Header-Nav">
             <ul class="NavUl">
                 <li class="NavUl-Item">
-                    <a href="./empresa.html" class="NavUl-Link">Empresa</a>
+                    <a href="/empresa.html" class="NavUl-Link">Empresa</a>
                 </li>
                 <li class="NavUl-Item">
-                    <a href="./productos.html" class="NavUl-Link">Productos</a>
+                    <a href="/productos.html" class="NavUl-Link">Productos</a>
                 </li>
                 <li class="NavUl-Item">
-                    <a href="./contactos.html" class="NavUl-Link">Contactos</a>
+                    <a href="/contactos.html" class="NavUl-Link">Contactos</a>
                 </li>
             </ul>
         </nav>
 
         <div class="Header-Iconos">
-            <a href="./carrito.html" class="Icono-Link">
+            <a href="/carrito.html" class="Icono-Link">
                 <span class="material-symbols-outlined">shopping_cart</span>
             </a>
-            <a href="./favorito.html" class="Icono-Link">
+            <a href="/favorito.html" class="Icono-Link">
                 <span class="material-symbols-outlined">star</span>
             </a>
-            <a href="./usuario.html" class="Icono-Link">
+            <a href="/usuario.html" class="Icono-Link">
                 <span class="material-symbols-outlined">account_circle</span>
             </a>
         </div>
@@ -76,7 +76,7 @@
             </div>
             <div id="formularioIniciarSesion" class="Tarjeta-Autenticacion activo">
                 <h2>Iniciar Sesión</h2>
-                <form class="Formulario-Autenticacion" action="/ProyectoFinal/login.html" method="post">
+                <form class="Formulario-Autenticacion"  method="post">
                     <label for="email-inicio">Correo Electrónico:</label>
                     <input type="email" id="email-inicio" name="email-inicio" placeholder="Ingresa tu correo" required>
                     
@@ -89,7 +89,7 @@
     
             <div id="formularioRegistrarse" class="Tarjeta-Autenticacion">
                 <h2>Registrarse</h2>
-                <form class="Formulario-Autenticacion" action="/ProyectoFinal/register.html" method="post">
+                <form class="Formulario-Autenticacion"  method="post">
                     <label for="nombre-registro">Nombre Completo:</label>
                     <input type="text" id="nombre-registro" name="nombre-registro" placeholder="Ingresa tu nombre completo" required>
                     
