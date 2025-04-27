@@ -1,0 +1,97 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Juego de Jardin",
+            "descripcion": "Juego completo de jardín con sillas y mesa, ideal para disfrutar al aire libre en tu patio o terraza.",
+            "precio": 350.00,
+            "imagenes": [
+                "/img/muebles/juego-jardin/jardin-1.jpg",
+                "/img/muebles/juego-jardin/jardin-2.jpg",
+                "/img/muebles/juego-jardin/jardin-3.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "nombre": "Cerco de postes",
+            "descripcion": "Cerco resistente de postes de madera, ideal para cercar jardines o propiedades, brindando privacidad y seguridad.",
+            "precio": 320.00,
+            "imagenes": [
+                "/img/cercos/postes/cerco-poste-1.jpg",
+                "/img/cercos/postes/cerco-poste-2.jpg",
+                "/img/cercos/postes/cerco-poste-3.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 3,
+            "nombre": "Cerco de Maderas",
+            "descripcion": "Cerco de maderas de alta calidad, perfecto para crear un ambiente natural y seguro en tu jardín o terreno.",
+            "precio": 400.00,
+            "imagenes": [
+                "/img/cercos/maderas/cerco-madera-1.jpg",
+                "/img/cercos/maderas/cerco-madera-2.jpg",
+                "/img/cercos/maderas/cerco-madera-3.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 4,
+            "nombre": "Mesa exterior",
+            "descripcion": "Mesa robusta y resistente para exteriores, ideal para disfrutar de una comida o reunión al aire libre.",
+            "precio": 400.00,
+            "imagenes": [
+               "/img/mesas/mesa-1.jpg",
+               "/img/mesas/mesa-2.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 5,
+            "nombre": "Reposera",
+            "descripcion": "Reposera de madera perfecta para descansar y disfrutar del sol en tu jardín o terraza.",
+            "precio": 400.00,
+            "imagenes": [
+                "/img/muebles/reposera/reposera-1.jpg",
+                "/img/muebles/reposera/reposera-2.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 6,
+            "nombre": "Sillon Exterior",
+            "descripcion": "Sillón exterior cómodo y resistente, diseñado para proporcionar confort en tu espacio al aire libre.",
+            "precio": 400.00,
+            "imagenes": [
+                "/img/muebles/tres-cuerpos/sillon-2.jpg",
+                "/img/muebles/tres-cuerpos/sillon-3.jpg",
+                "/img/muebles/tres-cuerpos/sillon-4.jpg",
+                "/img/muebles/tres-cuerpos/sillon-5.jpg"
+            ] ,
+            "stock": 10
+        },
+        {
+            "id": 7,
+            "nombre": "Porton Madera",
+            "descripcion": "Portón de madera robusto y elegante, ideal para entradas de jardín o propiedad, ofreciendo seguridad y estilo.",
+            "precio": 400.00,
+            "imagenes":[
+                "/img/porteras/portera-1.jpg",
+                "/img/porteras/portera-2.jpg"
+            ],
+            "stock": 10
+        },
+        {
+            "id": 8,
+            "nombre": "Pérgola",
+            "descripcion": "Pérgola de madera resistente para crear sombra en tu jardín, perfecta para áreas de descanso o comedor exterior.",
+            "precio": 400.00,
+            "imagenes":[
+                "/img/pergolas/pergola-1.jpg",
+                "/img/pergolas/pergola-2.jpg"
+            ],
+            "stock": 10
+        }
+    ]
+}

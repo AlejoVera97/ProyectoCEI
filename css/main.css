@@ -1,0 +1,465 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+.Body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* HEADER */
+.Header {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+}
+.Header-logo {
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+.Header-logo-lmagen {
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+    display: block;
+}
+.NavUl {
+    display: flex;
+    list-style: none;
+}
+.NavUl-link  {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Barra de Busqueda */
+.Header-busqueda {
+    display: flex;
+    align-items: center;
+}
+.Busqueda-barra {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.Busqueda-boton {
+    padding: 5px 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Busqueda-boton:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Iconos: Carrito, Favorito y Usuario */
+.Header-iconos {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    gap: 2rem;
+}
+.Icono-link  {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+.Icono-link :hover {
+    color: #007bff;
+}
+
+/* MAIN */
+/* Contenedor del slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Altura del slider */
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+/* Contenedor de las diapositivas */
+.slider-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo de cada diapositiva */
+.slide {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilo de la imagen dentro de cada diapositiva */
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+    z-index: -1;
+    filter: blur(1px)
+}
+
+/* Estilo del título */
+.slide h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    z-index: 1;
+    
+}
+
+/* Estilo del texto */
+.slide p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 60%;
+    text-align: center;
+    z-index: 1;
+    
+
+}
+
+/* Estilo del botón Info */
+.info-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+.info-button:hover {
+    background-color: #45a049;
+}
+
+/* Puntos de navegación */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #717171;
+}
+
+/* Section de empresa */
+.Main-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Section-titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Section-p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.Section-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.Section-link:hover {
+    background-color: #45a049; 
+}
+
+/* Section de maderas */
+.hover-slider-container {
+    position: relative;
+    width: 100%; 
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Contenedor de todos los slides */
+.hover-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+/* Contenedor de cada imagen */
+.hover-slide {
+    position: relative;
+    flex: 0 0 19%; 
+    height: 100%; 
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.hover-slide img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de agrandamiento */
+.hover-slide:hover img {
+    transform: scale(1.2);
+}
+
+.hover-slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: calc(100% - 20px); 
+}
+
+.hover-slide:hover .hover-slide-text {
+    opacity: 1;
+}
+
+.hover-slide-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.hover-slide-text p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+.Footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid lightgray;
+}
+
+.Footer-P {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    width: 100%;
+}
+
+.Footer-Section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%;
+    justify-items: center
+}
+
+.Section-Sucursal {
+    background-color: #f0f0f0; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Sucursal-Nombre {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Sucursal p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.Sucursal-Mapa {
+    display: inline-block;
+    color: #FF4081;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.Sucursal-Mapa:hover {
+    text-decoration: underline;
+}
+
+.Footer-Nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.NavUl {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.NavUl-link  {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.NavUl-link :hover {
+    color: #007bff;
+}
+
+
+
+/* Media Queries */
+
+/* TABLET GRANDE (hasta 1024px) */
+@media (max-width: 1024px) {
+    .Header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Header-logo-lmagen {
+        width: 80px;
+    }
+
+    .NavUl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider {
+        height: 400px;
+    }
+
+    .slider-container {
+        flex-direction: column;
+    }
+
+    .hover-slide {
+        flex: 0 0 45%;
+    }
+
+    .Footer-Section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* TABLET NORMAL (hasta 900px) */
+@media (max-width: 900px) {
+    .Header {
+        align-items: center; /* Solo cambiamos el alineamiento, ya estaba en columna */
+    }
+
+    .NavUl {
+        align-items: center; /* Solo alineación, ya estaba en columna */
+    }
+
+    .Header-logo-lmagen {
+        width: 100px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+
+    .hover-slide {
+        flex: 0 0 50%;
+    }
+
+    .Footer-Section {
+        grid-template-columns: 1fr;
+    }
+
+    .Header-busqueda {
+        display: none; /* Ocultar búsqueda en tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .Sucursal {
+        display: none; /* OCULTAR las sucursales en mobile */
+    }
+
+    .Footer-Nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .NavUl {
+        display: flex;
+        gap: 1em;
+    }
+
+    .NavUl-link  {
+        font-size: 24px; /* Íconos un poco más grandes */
+    }
+}
+
+
