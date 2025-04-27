@@ -1,4 +1,3 @@
-let currentSlide = 1;
 let isDragging = false;
 let startX, scrollLeft;
 
@@ -6,7 +5,7 @@ let startX, scrollLeft;
 const slider = document.querySelector(".hover-slider-container");
 
 document.addEventListener("DOMContentLoaded", () => {
-    showSlide(currentSlide); 
+    showSlide(0); 
 });
 
 // Evento para arrastrar el slider
@@ -27,25 +26,22 @@ slider.addEventListener("mousemove", (e) => {
     slider.scrollLeft = scrollLeft - walk;
 });
 
+const dots = document.querySelectorAll(".dot");
+dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+        console.log('showing slide', i);
+        showSlide(i)
+    })
+})
+
 // Función para mostrar una diapositiva específica
 function showSlide(n) {
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
-    if (n > slides.length) {
-        currentSlide = 1;
-    }
-    if (n < 1) {
-        currentSlide = slides.length;
-    }
     slides.forEach(slide => slide.style.display = "none");
     dots.forEach(dot => dot.classList.remove("active"));
-    slides[currentSlide - 1].style.display = "flex";
-    dots[currentSlide - 1].classList.add("active");
-}
-
-// Función para navegar entre las diapositivas
-function moveSlide(n) {
-    showSlide(currentSlide = n);
+    slides[n].style.display = "flex";
+    dots[n].classList.add("active");
 }
 
 // Función de búsqueda

@@ -12,7 +12,6 @@ Página principal con una vista atractiva y bien organizada.
 Sección de productos y servicios detallados.
 Galería de imágenes y testimonios.
 Formulario de contacto para facilitar la comunicación con los clientes.
-Integración con redes sociales (Instagram).
 
 -Objetivo
 El objetivo de este proyecto es mejorar la visibilidad en línea de la empresa y permitir una mejor conexión con nuestros clientes a través de la web.

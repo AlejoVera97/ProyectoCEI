@@ -9,7 +9,7 @@ const btnCancelarCompra = document.getElementById('cancelar-compra');
  // Eventos
 document.addEventListener('DOMContentLoaded', function () {
     btnProcederCompra.addEventListener('click', function () {
-        window.location.href = './procesoCompra.html';
+        window.location.href = './proceso-compra.html';
     });
     btnVolverProductos.addEventListener('click', function () {
         window.location.href = '/productos.html';
@@ -32,17 +32,18 @@ function cargarProductosCarrito() {
         carrito.forEach(producto => {
             
             const productoHTML = `
-            <div class="Producto-Carrito">
+            <div class="Producto-Carrito" >
                 <img src="${producto.imagenes[0]}" alt="${producto.nombre}" class="Producto-Imagen">
                 <div class="Producto-Info">
                     <h3 class="Producto-Nombre">${producto.nombre}</h3>
                     <p class="Producto-Descripcion">${producto.descripcion}</p>
                     <div class="Producto-Precio">$${producto.precio.toFixed(2)}</div>
-                    <button class="Producto-Boton-Eliminar" onclick="eliminarDelCarrito(${producto.id})">Eliminar</button>
+                    <button id="eliminar-producto-carrito-${producto.id}" onclick="eliminarDelCarrito(${producto.id})" class="Producto-Boton-Eliminar">Eliminar</button>
                 </div>
             </div>
             `;
             contenedorCarrito.innerHTML += productoHTML;
+            // contenedorCarrito.getElementById(`eliminar-producto-carrito-${producto.id}`).addEventListener('click', () => eliminarDelCarrito(producto.id))
         });
     } else {
         contenedorCarrito.innerHTML = '<p>No tienes productos en el carrito</p>';

@@ -41,7 +41,7 @@ function cargarProductosDesdeJSON() {
             </a>
         </div>
       <div class="Main-Grid-Carrito" id="Carrito-Agregar-${producto.id}">
-    <a href="javascript:void(0)" onclick="agregarAlCarrito(${producto.id})">
+    <a href="javascript:void(0)" >
         <span class="material-symbols-outlined">shopping_cart</span>
     </a>
 </div>
@@ -59,8 +59,8 @@ function cargarProductosDesdeJSON() {
 
                 // Función para agregar al carrito
                 carritoBtn.addEventListener('click', () => {
+                    console.log('ASDASd')
                     agregarAlCarrito(producto);
-                   
                 });
 
                 // Función para agregar a favoritos
@@ -77,17 +77,15 @@ function cargarProductosDesdeJSON() {
 }
 
 // Función para agregar un producto al carrito
-function agregarAlCarrito(id) {
-    const producto = obtenerProductoPorId(id);
-    if (producto) {
-        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-        if (!carrito.some(item => item.id === producto.id)) {
-            carrito.push(producto);
-            localStorage.setItem('carrito', JSON.stringify(carrito));
-            alert('Producto agregado al carrito');
-        } else {
-            alert('Este producto ya está en el carrito');
-        }
+function agregarAlCarrito(producto) {
+    console.log("INSIDE, AGREAGNDO AL CARRITO", producto.id)
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    if (!carrito.some(item => item.id === producto.id)) {
+        carrito.push(producto)
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        alert('Producto agregado al carrito');
+    } else {
+        alert('Este producto ya está en el carrito');
     }
 }
 

@@ -114,7 +114,7 @@
 /* Cta */
 
 /* Sección de Llamada a la Acción */
-.Main-Section-Cta {
+.Main-section-Cta {
     background-color:  #f39c12;
     color: white;
     padding: 40px 20px;
@@ -260,7 +260,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .Main-Section-Cta {
+    .Main-section-Cta {
         padding: 30px 15px;
     }
 
@@ -291,7 +291,7 @@
         aspect-ratio: 16 / 9; /* Cambia la relación de aspecto a rectangular */
     }
 
-    .Main-Section-Cta {
+    .Main-section-Cta {
         padding: 20px;
     }
 
