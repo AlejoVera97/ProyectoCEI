@@ -25,12 +25,12 @@
     align-items: center;
     margin: 1em;
 }
-.Header-Logo {
+.Header-logo {
     top: 0;
     left: 0;
     display: inline-block;
 }
-.Header-LogoImagen {
+.Header-logo-lmagen {
     width: 100px;
     height: auto;
     max-height: 100px;
@@ -40,24 +40,24 @@
     display: flex;
     list-style: none;
 }
-.NavUl-Link {
+.NavUl-link  {
     padding: 10px;
     text-decoration: none;
     color: black;
 }
 
 /* Barra de Busqueda */
-.Header-Busqueda {
+.Header-busqueda {
     display: flex;
     align-items: center;
 }
-.Busqueda-Barra {
+.Busqueda-barra {
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 5px;
 }
-.Busqueda-Boton {
+.Busqueda-boton {
     padding: 5px 10px;
     border: none;
     background: rgba(0, 0, 0, 0.5);
@@ -65,18 +65,18 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.Busqueda-Boton:hover {
+.Busqueda-boton:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
 /* Iconos: Carrito, Favorito y Usuario */
-.Header-Iconos {
+.Header-iconos {
     display: flex;
     align-items: center;
     margin-right: 1rem;
     gap: 2rem;
 }
-.Icono-Link {
+.Icono-link  {
     text-decoration: none;
     color: #333;
     font-size: 24px;
@@ -85,7 +85,7 @@
     align-items: center;
     transition: background-color 0.3s ease;
 }
-.Icono-Link:hover {
+.Icono-link :hover {
     color: #007bff;
 }
 
@@ -361,14 +361,14 @@
     justify-content: center;
 }
 
-.NavUl-Link {
+.NavUl-link  {
     color: #333;
     text-decoration: none;
     padding: 5px 10px;
     margin: 0 5px;
 }
 
-.NavUl-Link:hover {
+.NavUl-link :hover {
     color: #007bff;
 }
 
@@ -383,7 +383,7 @@
         align-items: flex-start;
     }
 
-    .Header-LogoImagen {
+    .Header-logo-lmagen {
         width: 80px;
     }
 
@@ -419,7 +419,7 @@
         align-items: center; /* Solo alineación, ya estaba en columna */
     }
 
-    .Header-LogoImagen {
+    .Header-logo-lmagen {
         width: 100px;
     }
 
@@ -435,7 +435,7 @@
         grid-template-columns: 1fr;
     }
 
-    .Header-Busqueda {
+    .Header-busqueda {
         display: none; /* Ocultar búsqueda en tablet */
     }
 }
@@ -457,7 +457,7 @@
         gap: 1em;
     }
 
-    .NavUl-Link {
+    .NavUl-link  {
         font-size: 24px; /* Íconos un poco más grandes */
     }
 }

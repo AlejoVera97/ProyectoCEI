@@ -16,11 +16,11 @@ a {
     padding: 50px 0;
 }
 
-.Main-Intro, 
-.Main-Historia, 
-.Main-Mision, 
-.Main-Productos, 
-.Main-Sucursales {
+.Main-intro, 
+.Main-historia, 
+.Main-mision, 
+.Main-productos, 
+.Main-sucursales {
     margin-bottom: 40px;
     text-align: center; /* Centra el contenido en todas estas secciones */
 }

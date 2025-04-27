@@ -42,7 +42,7 @@
             "descripcion": "Mesa robusta y resistente para exteriores, ideal para disfrutar de una comida o reunión al aire libre.",
             "precio": 400.00,
             "imagenes": [
-                "/img/mesas/mesa-1.jpg",
+               "/img/mesas/mesa-1.jpg",
                "/img/mesas/mesa-2.jpg"
             ],
             "stock": 10

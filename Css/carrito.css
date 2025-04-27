@@ -124,7 +124,7 @@
     margin-top: 20px;
 }
 
-.Carrito-Total span {
+.Carrito-total span {
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
@@ -169,7 +169,7 @@
         padding: 8px 16px;
     }
 
-    .Carrito-Total span {
+    .Carrito-total span {
         font-size: 1.2rem;
     }
 }
@@ -214,7 +214,7 @@
         padding: 6px 12px;
     }
 
-    .Carrito-Total span {
+    .Carrito-total span {
         font-size: 1rem;
     }
 }

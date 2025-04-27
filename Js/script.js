@@ -48,7 +48,7 @@ function showSlide(n) {
 
 // Función de búsqueda
 document.addEventListener('DOMContentLoaded', function() {
-    const formulario = document.querySelector('.Header-Busqueda');
+    const formulario = document.querySelector('.Header-busqueda');
     const barraBusqueda = document.querySelector('.Busqueda-Barra');
     formulario.addEventListener('submit', function(evento) {
         evento.preventDefault();
