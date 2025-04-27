@@ -41,7 +41,7 @@ function mostrarMensaje(mensaje, tipo) {
     const mensajeDiv = document.createElement("div");
     mensajeDiv.className = `mensaje ${tipo}`;
     mensajeDiv.textContent = mensaje;
-    const contenedor = document.querySelector(".Formulario-Section");
+    const contenedor = document.querySelector(".Formulario-section");
     contenedor.prepend(mensajeDiv);
     setTimeout(() => mensajeDiv.remove(), 3000);
 }

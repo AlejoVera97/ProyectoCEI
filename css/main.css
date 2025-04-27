@@ -372,7 +372,11 @@
     color: #007bff;
 }
 
+
+
 /* Media Queries */
+
+/* TABLET GRANDE (hasta 1024px) */
 @media (max-width: 1024px) {
     .Header {
         flex-direction: column;
@@ -405,29 +409,57 @@
     }
 }
 
-@media (max-width: 768px) {
+/* TABLET NORMAL (hasta 900px) */
+@media (max-width: 900px) {
     .Header {
-        flex-direction: column;
-        padding: 1em 0;
+        align-items: center; /* Solo cambiamos el alineamiento, ya estaba en columna */
     }
 
     .NavUl {
-        flex-direction: column;
+        align-items: center; /* Solo alineación, ya estaba en columna */
+    }
+
+    .Header-LogoImagen {
+        width: 100px;
     }
 
     .slider {
-        height: 300px;
-    }
-
-    .slider-container {
-        flex-direction: column;
+        height: 350px;
     }
 
     .hover-slide {
-        flex: 0 0 100%;
+        flex: 0 0 50%;
     }
 
     .Footer-Section {
         grid-template-columns: 1fr;
     }
+
+    .Header-Busqueda {
+        display: none; /* Ocultar búsqueda en tablet */
+    }
 }
+
+@media (max-width: 768px) {
+    .Sucursal {
+        display: none; /* OCULTAR las sucursales en mobile */
+    }
+
+    .Footer-Nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .NavUl {
+        display: flex;
+        gap: 1em;
+    }
+
+    .NavUl-Link {
+        font-size: 24px; /* Íconos un poco más grandes */
+    }
+}
+
+

@@ -1,6 +1,6 @@
 
 /* Estilo principal del carrito */
-.Main-Carrito {
+.Main-carrito {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
@@ -10,7 +10,7 @@
 }
 
 /* Título del carrito */
-.Main-Carrito h2 {
+.Main-carrito h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -18,14 +18,14 @@
 }
 
 /* Contenedor de productos */
-#contenedor-carrito {
+#Contenedor-carrito {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
 /* Producto individual */
-.Producto-Carrito {
+.Producto-carrito {
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -35,12 +35,12 @@
     transition: box-shadow 0.3s ease;
 }
 
-.Producto-Carrito:hover {
+.Producto-carrito:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Imagen del producto */
-.Producto-Imagen {
+.Producto-imagen {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -49,7 +49,7 @@
 }
 
 /* Información del producto */
-.Producto-Info {
+.Producto-info {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -57,27 +57,27 @@
 }
 
 /* Nombre del producto */
-.Producto-Nombre {
+.Producto-nombre {
     font-size: 1.5rem;
     color: #333;
     margin: 0;
 }
 
 /* Descripción */
-.Producto-Descripcion {
+.Producto-descripcion {
     font-size: 0.9rem;
     color: #777;
 }
 
 /* Precio */
-.Producto-Precio {
+.Producto-precio {
     font-size: 1.2rem;
     font-weight: bold;
     color: #e67e22;
 }
 
 /* Botón de eliminar */
-.Producto-Boton-Eliminar {
+.Producto-boton-eliminar {
     align-self: start;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
@@ -89,12 +89,12 @@
     transition: background-color 0.3s ease;
 }
 
-.Producto-Boton-Eliminar:hover {
+.Producto-boton-eliminar:hover {
     background-color: #c0392b;
 }
 
 /* Estilos para los botones */
-.Carrito-Boton {
+.Carrito-boton {
     margin: 10px 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -106,7 +106,7 @@
     transition: background-color 0.3s;
 }
 
-.Carrito-Boton:hover {
+.Carrito-boton:hover {
     background-color: #0056b3;
 }
 
@@ -132,39 +132,39 @@
 
 /* Responsive para tablets (768px - 1024px) */
 @media (max-width: 1024px) {
-    .Main-Carrito {
+    .Main-carrito {
         padding: 1rem;
     }
 
-    .Producto-Carrito {
+    .Producto-carrito {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .Producto-Imagen {
+    .Producto-imagen {
         width: 100%;
         height: auto;
         margin-bottom: 1rem;
     }
 
-    .Producto-Info {
+    .Producto-info {
         align-items: flex-start;
     }
 
-    .Producto-Nombre {
+    .Producto-nombre {
         font-size: 1.2rem;
     }
 
-    .Producto-Precio {
+    .Producto-precio {
         font-size: 1rem;
     }
 
-    .Producto-Boton-Eliminar {
+    .Producto-boton-eliminar {
         padding: 0.4rem 0.8rem;
         font-size: 0.8rem;
     }
 
-    .Carrito-Boton {
+    .Carrito-boton {
         font-size: 14px;
         padding: 8px 16px;
     }
@@ -176,40 +176,40 @@
 
 /* Responsive para iPhone (320px - 428px) */
 @media (max-width: 428px) {
-    .Main-Carrito {
+    .Main-carrito {
         padding: 0.5rem;
         margin: 1rem;
     }
 
-    .Main-Carrito h2 {
+    .Main-carrito h2 {
         font-size: 1.5rem;
     }
 
-    .Producto-Carrito {
+    .Producto-carrito {
         flex-direction: column;
         padding: 0.5rem;
     }
 
-    .Producto-Imagen {
+    .Producto-imagen {
         width: 100%;
         height: auto;
         margin-bottom: 1rem;
     }
 
-    .Producto-Nombre {
+    .Producto-nombre {
         font-size: 1rem;
     }
 
-    .Producto-Precio {
+    .Producto-precio {
         font-size: 0.9rem;
     }
 
-    .Producto-Boton-Eliminar {
+    .Producto-boton-eliminar {
         padding: 0.3rem 0.6rem;
         font-size: 0.7rem;
     }
 
-    .Carrito-Boton {
+    .Carrito-boton {
         font-size: 12px;
         padding: 6px 12px;
     }

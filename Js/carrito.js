@@ -1,7 +1,7 @@
 
 
 //Variables y Constantes
-const contenedorCarrito = document.getElementById('contenedor-carrito');
+const contenedorCarrito = document.getElementById('Contenedor-carrito');
 const btnProcederCompra = document.getElementById('proceder-compra');
 const btnVolverProductos = document.getElementById('volver-productos');
 const btnCancelarCompra = document.getElementById('cancelar-compra');
@@ -32,18 +32,18 @@ function cargarProductosCarrito() {
         carrito.forEach(producto => {
             
             const productoHTML = `
-            <div class="Producto-Carrito" >
-                <img src="${producto.imagenes[0]}" alt="${producto.nombre}" class="Producto-Imagen">
+            <div class="Producto-carrito" >
+                <img src="${producto.imagenes[0]}" alt="${producto.nombre}" class="Producto-imagen">
                 <div class="Producto-Info">
-                    <h3 class="Producto-Nombre">${producto.nombre}</h3>
-                    <p class="Producto-Descripcion">${producto.descripcion}</p>
-                    <div class="Producto-Precio">$${producto.precio.toFixed(2)}</div>
-                    <button id="eliminar-producto-carrito-${producto.id}" onclick="eliminarDelCarrito(${producto.id})" class="Producto-Boton-Eliminar">Eliminar</button>
+                    <h3 class="Producto-nombre">${producto.nombre}</h3>
+                    <p class="Producto-descripcion">${producto.descripcion}</p>
+                    <div class="Producto-precio">$${producto.precio.toFixed(2)}</div>
+                    <button id="eliminar-Producto-carrito-${producto.id}" onclick="eliminarDelCarrito(${producto.id})" class="Producto-boton-eliminar">Eliminar</button>
                 </div>
             </div>
             `;
             contenedorCarrito.innerHTML += productoHTML;
-            // contenedorCarrito.getElementById(`eliminar-producto-carrito-${producto.id}`).addEventListener('click', () => eliminarDelCarrito(producto.id))
+            // contenedorCarrito.getElementById(`eliminar-Producto-carrito-${producto.id}`).addEventListener('click', () => eliminarDelCarrito(producto.id))
         });
     } else {
         contenedorCarrito.innerHTML = '<p>No tienes productos en el carrito</p>';

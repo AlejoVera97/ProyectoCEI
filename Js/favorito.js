@@ -14,11 +14,11 @@ function cargarProductosFavoritos() {
 
             const productoHTML = `
             <div class="Producto-Favorito">
-                <img src="${producto.imagenes[0]}" alt="${producto.nombre}" class="Producto-Imagen">
+                <img src="${producto.imagenes[0]}" alt="${producto.nombre}" class="Producto-imagen">
                 <div class="Producto-Info">
-                    <h3 class="Producto-Nombre">${producto.nombre}</h3>
-                    <p class="Producto-Descripcion">${producto.descripcion}</p>
-                    <div class="Producto-Precio">$${producto.precio.toFixed(2)}</div>
+                    <h3 class="Producto-nombre">${producto.nombre}</h3>
+                    <p class="Producto-descripcion">${producto.descripcion}</p>
+                    <div class="Producto-precio">$${producto.precio.toFixed(2)}</div>
                     <button class="Producto-Boton-Quitar" onclick="quitarDeFavoritos(${producto.id})">Quitar</button>
                 </div>
             </div>

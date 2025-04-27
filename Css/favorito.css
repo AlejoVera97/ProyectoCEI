@@ -43,7 +43,7 @@
 }
 
 /* Estilo para la imagen del producto */
-.Producto-Imagen {
+.Producto-imagen {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -52,12 +52,12 @@
 }
 
 /* Información del producto */
-.Producto-Info {
+.Producto-info {
     flex: 1;
 }
 
 /* Nombre del producto */
-.Producto-Nombre {
+.Producto-nombre {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
@@ -65,14 +65,14 @@
 }
 
 /* Descripción del producto */
-.Producto-Descripcion {
+.Producto-descripcion {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 10px;
 }
 
 /* Precio del producto */
-.Producto-Precio {
+.Producto-precio {
     font-size: 1.1rem;
     color: #27ae60; /* Un color verde */
     font-weight: bold;
@@ -104,22 +104,22 @@
         align-items: flex-start;
     }
 
-    .Producto-Imagen {
+    .Producto-imagen {
         width: 100px;
         height: 100px;
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .Producto-Nombre {
+    .Producto-nombre {
         font-size: 1rem;
     }
 
-    .Producto-Descripcion {
+    .Producto-descripcion {
         font-size: 0.8rem;
     }
 
-    .Producto-Precio {
+    .Producto-precio {
         font-size: 1rem;
     }
 
@@ -130,20 +130,20 @@
 
 /* Para dispositivos muy pequeños (como móviles en modo retrato) */
 @media (max-width: 480px) {
-    .Producto-Imagen {
+    .Producto-imagen {
         width: 80px;
         height: 80px;
     }
 
-    .Producto-Nombre {
+    .Producto-nombre {
         font-size: 1rem;
     }
 
-    .Producto-Descripcion {
+    .Producto-descripcion {
         font-size: 0.8rem;
     }
 
-    .Producto-Precio {
+    .Producto-precio {
         font-size: 1rem;
     }
 
